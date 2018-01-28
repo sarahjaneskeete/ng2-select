@@ -271,7 +271,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
       this._items = this.itemObjects = [];
     } else {
       this._items = value.filter((item: any) => {
-        if ((typeof item === 'string') || (typeof item === 'object' && item && item[this.textField] && item[this.idField])) {
+        if ((typeof item === 'string') || (typeof item === 'object' && item && item[this.textField])) {
           return item;
         }
       });
